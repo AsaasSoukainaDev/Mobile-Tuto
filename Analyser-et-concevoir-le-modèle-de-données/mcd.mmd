@@ -1,0 +1,27 @@
+---
+config:
+  theme: neutral
+---
+erDiagram
+    direction TB
+
+    COMMANDE {
+        int idCommande PK
+        string numeroCommande
+        datetime dateCommande
+    }
+
+    PRODUIT {
+        int idProduit PK
+        string nomProduit
+        double prixProduit
+    }
+
+    CLIENT {
+        int idClient PK
+        string nomClient
+        string emailClient
+    }
+
+    COMMANDE |{--o{ PRODUIT : "contient"
+    CLIENT o{--|| COMMANDE : "passe"
