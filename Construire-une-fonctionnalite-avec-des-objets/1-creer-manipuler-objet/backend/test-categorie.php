@@ -5,3 +5,5 @@
     $cat1->afficher();
     $cat2->afficher();
 ?>
+
+
