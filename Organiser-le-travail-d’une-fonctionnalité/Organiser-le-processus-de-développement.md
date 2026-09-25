@@ -29,19 +29,3 @@ graph LR
     style E1 fill:#f0fdf4,stroke:#16a34a,stroke-dasharray: 5 5
 ```
 
-## 🔍 Test vs Validation
-
-| | 🧪 **Test** | ✅ **Validation** |
-|---|---|---|
-| **Question** | « Ça marche ? » | « C'est conforme ? » |
-| **Vérifie** | Le comportement technique | La conformité au besoin métier |
-| **Exemple** | Le bouton *Supprimer* retire bien la ligne | La gestion des catégories est complète et utilisable |
-| **Résultat** | Liste d'anomalies (ou 0) | Fonctionnalité acceptée |
-
-## 📌 Chemin critique
-
-```
-Cadrer → Concevoir → Développer → Tester → Valider
-```
-
-> ⚠️ **Limite du modèle en cascade** : si un problème est découvert lors des tests, revenir en arrière est coûteux. Les méthodes **Agiles** (Scrum, Kanban) permettent de livrer par petits incréments testés et validés à chaque sprint.
