@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Gestion des catégories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, opacity 0.2s;
+        }
+
+        button:hover:not(:disabled) {
+            background: #357ab8;
+        }
+
+        button:disabled {
+            background: #a0c1e8;
+            cursor: not-allowed;
+            opacity: 0.8;
+        }
+
+        #message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        #message.success {
+            display: block;
+            background: #e6f7e9;
+            color: #1b7a3d;
+            border: 1px solid #b7e3c2;
+        }
+
+        #message.error {
+            display: block;
+            background: #fdecea;
+            color: #a3251c;
+            border: 1px solid #f5c2c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📁 Ajouter une catégorie</h1>
+
+        <form id="form-categorie">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex: Développement Web" required>
+            </div>
+
+            <div class="form-group">
+                <label for="couleur">Couleur</label>
+                <input type="text" id="couleur" name="couleur" placeholder="Ex: blue" required>
+            </div>
+
+            <div class="form-group">
+                <label for="icone">Icône</label>
+                <input type="text" id="icone" name="icone" placeholder="Ex: fa-code" required>
+            </div>
+
+            <button type="submit" id="btn-submit-form">Enregistrer</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
