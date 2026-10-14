@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Administration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="hidden md:block w-64 bg-slate-900 text-white p-6">
+            <h2 class="text-2xl font-bold mb-6">Mon Blog</h2>
+            <nav>
+                <a href="#" class="block py-2 px-4 bg-slate-800 rounded">Catégories</a>
+            </nav>
+        </aside>
+
+        <!-- Contenu principal -->
+        <main class="flex-1 p-4 md:p-8">
+            <h1 class="text-3xl font-bold mb-6">Gestion des Catégories</h1>
+
+            <form id="form-categorie" class="bg-white p-6 rounded shadow mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- vos champs -->
+                <div class="md:col-span-2 mt-4">
+                    <button type="submit" id="btn-submit-form" class="bg-blue-600 text-white px-4 py-2 rounded">
+                        Enregistrer
+                    </button>
+                </div>
+            </form>
+
+            <div class="overflow-x-auto bg-white p-6 rounded shadow">
+                <table class="w-full text-left border-collapse min-w-[600px]">
+                    <!-- tableau -->
+                </table>
+            </div>
+
+            <div id="toast-container" class="fixed bottom-4 right-4 flex flex-col gap-2"></div>
+        </main>
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

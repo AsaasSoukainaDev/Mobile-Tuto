@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nom": "Piza",
+        "couleur": "black",
+        "icone": "12"
+    },
+    {
+        "id": 2,
+        "nom": "Piza",
+        "couleur": "black",
+        "icone": "12"
+    }
+]
